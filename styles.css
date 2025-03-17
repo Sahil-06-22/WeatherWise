@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url('./assets/background.jpg');
+    background-size: cover;          /* Ensures the image covers the whole screen */
+    background-position: center;     /* Centers the background */
+    background-repeat: no-repeat;    /* Prevents repeating */
+    background-attachment: fixed;    /* Keeps the background fixed while scrolling */
+    transition: background-image 0.5s ease-in-out; /* Smooth transition */
+
+}
+
+
+.col {
+  background: rgba(255, 255, 255, 0.1); /* Light transparent white */
+  backdrop-filter: blur(10px); /* Glassmorphism blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Soft border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  border-radius: 35px; /* Rounded corners for aesthetics */
+  position: relative; /* Ensures layering */
+ 
+}
+
+
+.card-title, 
+.list-unstyled li {
+    color: rgb(145, 78, 78) !important; /* Make text white */
+}
+
+/* Optional: Improve readability */
+.list-unstyled {
+    font-size: 1.2rem; /* Increase text size */
+    font-weight: 500; /* Make text slightly bold */
+}
